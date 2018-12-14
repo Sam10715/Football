@@ -40,10 +40,10 @@ public class App {
         teamLists.add(amuTeam2);
         teamLists.add(amuTeam3);
         teamLists.add(amuTeam4);
-        teamLists.remove(amuTeam5);
+        teamLists.add(amuTeam5);
 
 
-        MatchController.MatchLogic(MatchController.MatchLogic(MatchController.MatchLogic(teamLists)));
+        MatchController.matchLogic(MatchController.matchLogic(MatchController.matchLogic(teamLists)));
 
 
     }

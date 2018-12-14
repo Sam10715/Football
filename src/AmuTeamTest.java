@@ -19,7 +19,7 @@ public class AmuTeamTest {
     }
 
     @Test
-    public void main() {
+    public void amuTest() {
         assertTrue(amuTeam1.check() <= 30 && amuTeam1.check() >= 0);
         assertTrue(amuTeam2.check() <= 25 && amuTeam2.check() >= 0);
         assertTrue(amuTeam3.check() <= 75 && amuTeam3.check() >= 0);

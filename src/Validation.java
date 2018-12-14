@@ -37,7 +37,7 @@ public class Validation {
                 break;
             default:
                 x = false;
-                throw new IllegalArgumentException("The input should be either High or Low or Super");
+                throw new IllegalArgumentException("The input should be either High or Low or Super or Queen");
 
         }
 

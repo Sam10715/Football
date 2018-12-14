@@ -16,7 +16,7 @@ public class ProTeamTest {
     }
 
     @Test
-    public void main() {
+    public void proTest() {
         assertTrue(proTeam1.check() <= 30 && proTeam1.check() >= 0);
         assertTrue(proTeam2.check() <= 50 && proTeam2.check() >= 0);
 

@@ -43,9 +43,9 @@ public class MatchControllerTest {
 
     @Test
     public void matchLogicTest() {
-        assertEquals(MatchController.MatchLogic(teamLists).size(), 4, 0);
-        assertEquals(MatchController.MatchLogic(MatchController.MatchLogic(teamLists)).size(), 2, 0);
-        assertEquals(MatchController.MatchLogic(MatchController.MatchLogic(MatchController.MatchLogic(teamLists))).size(), 1, 0);
+        assertEquals(MatchController.matchLogic(teamLists).size(), 4, 0);
+        assertEquals(MatchController.matchLogic(MatchController.matchLogic(teamLists)).size(), 2, 0);
+        assertEquals(MatchController.matchLogic(MatchController.matchLogic(MatchController.matchLogic(teamLists))).size(), 1, 0);
 
     }
 

@@ -28,7 +28,7 @@ public class MatchController {
     }
 
 
-    public static List<Team> MatchLogic(List<Team> teamList) {
+    public static List<Team> matchLogic(List<Team> teamList) {
         List<Team> p1 = new ArrayList<>();
         if (teamList.size() % 2 != 0) {
             teamList.remove(teamList.get(teamList.size() - 1));
