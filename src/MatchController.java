@@ -28,20 +28,22 @@ public class MatchController {
     }
 
 
-    public static List<Team> matchLogic(List<Team> teamList) {
+    public static  List<Team> matchLogic(List<Team> teamList, Round round) {
         List<Team> p1 = new ArrayList<>();
-        if (teamList.size() % 2 != 0) {
-            teamList.remove(teamList.get(teamList.size() - 1));
+        //if (teamList.size() % 2 != 0) {
+          //  teamList.remove(teamList.get(teamList.size() - 1));
             // if the teams number is ood, kick the last team out the competition
             // it means that the team registered too late for the competition.
-        }
-        if (teamList.size() == 8) {
-            System.out.println("The First round");
-        } else if (teamList.size() == 4) {
-            System.out.println("The Second round");
-        } else if (teamList.size() == 2) {
-            System.out.println("The Final round");
-        }
+        //}
+        //if (teamList.size() == 8) {
+          //  System.out.println("The First round");
+        //} else if (teamList.size() == 4) {
+        //    System.out.println("The Second round");
+        //} else if (teamList.size() == 2) {
+          //  System.out.println("The Final round");
+        //}
+System.out.println(round.getName());
+
 
         System.out.println("-------------------------------------------------------------------------");
 

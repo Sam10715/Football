@@ -16,7 +16,13 @@ public class App {
         AmuTeam amuTeam4 = new AmuTeam("Bird", "High", "Team8");
         // team 9 registered for the competition when it was too late, Sorry.
         AmuTeam amuTeam5 = new AmuTeam("Horse", "Low", "Team9");
-
+        AmuTeam amuTeam6 = new AmuTeam("Samer", "low", "team10");
+        AmuTeam amuTeam7 = new AmuTeam("Horse", "Low", "Team11");
+        AmuTeam amuTeam8 = new AmuTeam("Samer", "low", "team12");
+        AmuTeam amuTeam9 = new AmuTeam("Horse", "Low", "Team13");
+        AmuTeam amuTeam10 = new AmuTeam("Samer", "low", "team14");
+        AmuTeam amuTeam11 = new AmuTeam("Horse", "Low", "Team15");
+        AmuTeam amuTeam12 = new AmuTeam("Samer", "low", "team16");
 
         Validation.proValidation(proTeam1);
         Validation.proValidation(proTeam2);
@@ -42,8 +48,20 @@ public class App {
         teamLists.add(amuTeam4);
         teamLists.add(amuTeam5);
 
+        Round round1 = new Round();
+        round1.setName("the first round");
+        Round round2 = new Round();
+        round2.setName("second round");
+        Round round3 = new Round();
+        round3.setName("finals");
 
-        MatchController.matchLogic(MatchController.matchLogic(MatchController.matchLogic(teamLists)));
+
+List<Team> teamList1 = MatchController.matchLogic(teamLists, round1);
+List<Team> teamList2 = MatchController.matchLogic(teamList1,round2);
+List<Team> teamList3= MatchController.matchLogic(teamList2,round3);
+
+
+
 
 
     }
